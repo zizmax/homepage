@@ -1,19 +1,207 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Nate Delgado</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=“UTF-8”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Calistoga|Open+Sans" rel="stylesheet" type="text/css">
+</head>
 
-  <body>
-    <div class="block style-1">
+<body>
+    <style>
+        /*
+        #ffc758 orange
+        #BEE5EB blue
+        #E0E55E green
+        #F68D71 red
+        #FACED5 pink
+        */
+        * {
+            box-sizing: border-box;
+        }
 
-      <h1>coming soon.</h1>
-      <p>in the meantime, visit <a href="http://puns.us">puns.us</a></p>
+        .projects {
+            font-family: "Open Sans";
+        }
 
+        .projects p {
+            font-size: 2vw;
+        }
+
+        .projects h1 {
+            font-size: 3vw;
+            font-weight: bold;
+        }
+
+        .projects:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .left {
+            background-color: #ffc758;
+            border-radius: 25px;
+            padding: 2vw;
+            float: left;
+            width: 50%;
+            height: 35vw;
+            text-align: center;
+            box-shadow: 5px 5px 5px grey;
+
+        }
+
+        .right {
+            background-color: #BEE5EB;
+            border-radius: 25px;
+            padding: 2vw;
+            float: right;
+            width: 50%;
+            height: 35vw;
+            text-align: center;
+            box-shadow: 5px 5px 5px grey;
+
+        }
+
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width:800px) {
+
+            .left,
+            .right {
+                width: 80%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+                margin: auto;
+                float: none;
+            }
+        }
+
+        .container {
+            display: flex;
+            /*align-items: center;
+        justify-content: center; */
+        }
+
+        .directions_container {
+            margin-left: 5vw;
+            border-radius: 12px;
+            background-color: #FACED5;
+            box-shadow: 5px 5px 5px grey;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .directions_text {
+            font-family: "Open Sans";
+            font-size: 2vw;
+            /*margin-left:10vw;*/
+        }
+
+        a:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: gray;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .image {
+            flex-basis: 40%;
+            margin-left: 10vw;
+            margin-top: 3vw;
+            -webkit-filter: drop-shadow(5px 5px 5px grey);
+            filter: drop-shadow(5px 5px 5px grey);
+        }
+
+        .hi {
+            font-family: 'Calistoga';
+            font-size: 7vw;
+            margin-left: 5vw;
+            margin-right: 10vw;
+            margin-top: 12vw;
+        }
+
+        .about {
+            font-family: 'Open Sans';
+            font-size: 2vw;
+            margin-top: -5vw;
+            padding-left: 10vw;
+            padding-right: 7vw;
+
+
+        }
+
+        .footer {
+            background-color: #F68D71;
+            border-radius: 8px;
+            font-family: 'Open Sans';
+            text-align: center;
+            margin-top: 1vw;
+            font-size: 1vw;
+            box-shadow: 5px 5px 5px grey;
+
+        }
+    </style>
+
+    <div class="container">
+        <div class="image">
+            <img src="natecropped.png" style="max-width:100%;height:auto;">
+        </div>
+        <div class="text">
+            <h2 class="hi">Hi, I'm Nate</h2>
+            <ul class="about">
+                <li>Cybersecurity engineer</li>
+                <li>Open-source developer</li>
+                <li>Personal finance nerd</li>
+            </ul>
+
+        </div>
     </div>
-  </body>
+    <div class="directions_container"><a href="http://puns.us" class="directions_text"> <i
+                class="fas fa-mouse-pointer"></i> Click for puns</a>
+        <p class="directions_text"><i class="fas fa-angle-double-down"></i> Scroll for featured projects</p>
+    </div>
+    </div>
+
+    <div class="projects">
+        <div class="left">
+            <a href="https://www.spigotmc.org/resources/acuteloot.81899/"><img src="al.png"
+                    style="max-width:10vw;max-height:10vw;"></a>
+            <h1><a href="https://www.spigotmc.org/resources/acuteloot.81899/">AcuteLoot</a></h1></a>
+            <p>Free, open-source Minecraft plugin</p>
+            <ul style="font-size:1.2vw;list-style-position:inside;">
+                <li>15+ custom effects for items and loot</li>
+                <li>Over 6 billion randomly generated names</li>
+                <li>6k+ downloads</li>
+                <li>Used in 30+ countries</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="https://forgetalgebra.com"><img src="fa.png" style="max-width:10vw;max-height:10vw;"></a>
+            <h1><a href="https://forgetalgebra.com">Forget Algebra</a></h1>
+            <p>Writings on personal finance, professional development and other helpful topics not covered in school.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="footer">Handmade with &#x1F506; | © Nate Delgado</div>
+
+</body>
+
 </html>
-  
