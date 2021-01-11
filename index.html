@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset=“UTF-8”>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Calistoga|Open+Sans" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Calistoga|Open+Sans" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -24,8 +24,15 @@
             box-sizing: border-box;
         }
 
+        body {
+            margin: 0px;
+        }
+
         .projects {
             font-family: "Open Sans";
+            text-align: center;
+            margin-top: 1vw;
+
         }
 
         .projects p {
@@ -48,11 +55,11 @@
             border-radius: 25px;
             padding: 2vw;
             float: left;
-            width: 50%;
+            width: 48.75vw;
             height: 35vw;
             text-align: center;
             box-shadow: 5px 5px 5px grey;
-
+            margin-left: .5vw;
         }
 
         .right {
@@ -60,35 +67,21 @@
             border-radius: 25px;
             padding: 2vw;
             float: right;
-            width: 50%;
+            width: 48.75vw;
             height: 35vw;
             text-align: center;
             box-shadow: 5px 5px 5px grey;
+            margin-right: .5vw;
 
-        }
-
-        /* Use a media query to add a break point at 800px: */
-        @media screen and (max-width:800px) {
-
-            .left,
-            .right {
-                width: 80%;
-                /* The width is 100%, when the viewport is 800px or smaller */
-                margin: auto;
-                float: none;
-            }
         }
 
         .container {
             display: flex;
-            /*align-items: center;
-        justify-content: center; */
         }
 
         .directions_container {
             margin-left: 5vw;
-            border-radius: 12px;
-            background-color: #FACED5;
+            background-color: #F68D71;
             box-shadow: 5px 5px 5px grey;
             margin: auto;
             text-align: center;
@@ -98,6 +91,7 @@
         .directions_text {
             font-family: "Open Sans";
             font-size: 2vw;
+            margin: 0px;
             /*margin-left:10vw;*/
         }
 
@@ -120,7 +114,7 @@
         }
 
         .image {
-            flex-basis: 40%;
+            flex-basis: 25%;
             margin-left: 10vw;
             margin-top: 3vw;
             -webkit-filter: drop-shadow(5px 5px 5px grey);
@@ -129,9 +123,9 @@
 
         .hi {
             font-family: 'Calistoga';
-            font-size: 7vw;
-            margin-left: 5vw;
-            margin-right: 10vw;
+            font-size: 6vw;
+            margin-left: 7.5vw;
+            margin-right: 5vw;
             margin-top: 12vw;
         }
 
@@ -141,19 +135,99 @@
             margin-top: -5vw;
             padding-left: 10vw;
             padding-right: 7vw;
+        }
 
-
+        .contact {
+            background-color: #E0E55E;
+            font-family: 'Open Sans';
+            text-align: center;
+            margin-top: 1vw;
+            font-size: 1vw;
+            box-shadow: 5px 5px 5px grey;
         }
 
         .footer {
-            background-color: #F68D71;
-            border-radius: 8px;
+            background-color: #FACED5;
             font-family: 'Open Sans';
             text-align: center;
             margin-top: 1vw;
             font-size: 1vw;
             box-shadow: 5px 5px 5px grey;
 
+        }
+
+        @media screen and (max-width:1200px) {
+            .left {
+                height: 80vw;
+            }
+
+            .right {
+                height: 45vw;
+            }
+
+            .projects p {
+                font-size: 4vw;
+            }
+
+            .projects h1 {
+                font-size: 5vw;
+            }
+
+            .projects li {
+                font-size: 4vw;
+            }
+
+            .left,
+            .right {
+                width: 80%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+                margin: auto;
+                float: none;
+                margin-top: 1vw;
+            }
+
+            .container {
+                text-align: center;
+                display: inline;
+            }
+
+            .image {
+                max-width: 50vw;
+                margin: auto;
+                margin-top: 3vw;
+            }
+
+            .hi {
+                margin: 0px auto;
+            }
+
+            .about {
+                margin: 0px auto;
+                display: inline-block;
+            }
+
+            .directions_container {
+                margin-top: 1vw;
+            }
+
+            .text {
+                text-align: center;
+                list-style-position: outside;
+            }
+
+            .contact {
+                background-color: #E0E55E;
+                font-family: 'Open Sans';
+                text-align: center;
+                margin-top: 1vw;
+                font-size: 1vw;
+                box-shadow: 5px 5px 5px grey;
+            }
+
+            .footer {
+                min-height: 5vw;
+                font-size: 3vw;
+            }
         }
     </style>
 
@@ -169,6 +243,7 @@
                 <li>Personal finance nerd</li>
             </ul>
 
+
         </div>
     </div>
     <div class="directions_container"><a href="http://puns.us" class="directions_text"> <i
@@ -183,7 +258,7 @@
                     style="max-width:10vw;max-height:10vw;"></a>
             <h1><a href="https://www.spigotmc.org/resources/acuteloot.81899/">AcuteLoot</a></h1></a>
             <p>Free, open-source Minecraft plugin</p>
-            <ul style="font-size:1.2vw;list-style-position:inside;">
+            <ul style="font-size:1.2vw;display:inline-block;list-style-position:outside;text-align: left;">
                 <li>15+ custom effects for items and loot</li>
                 <li>Over 6 billion randomly generated names</li>
                 <li>6k+ downloads</li>
@@ -199,8 +274,12 @@
         </div>
     </div>
 
+    <div class="contact">
+        <a href=https://www.linkedin.com/in/nate-delgado/ class="directions_text"><i class="fab fa-linkedin"></i></a>
+        <a href=https://twitter.com/zizmax_ class="directions_text"><i class="fab fa-twitter-square"></i></a>
+    </div>
 
-    <div class="footer">Handmade with &#x1F506; | © Nate Delgado</div>
+    <div class="footer">Handmade with &#x1F494;| © Nate Delgado</div>
 
 </body>
 
