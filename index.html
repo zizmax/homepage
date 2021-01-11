@@ -30,18 +30,27 @@
 
         .projects {
             font-family: "Open Sans";
-            text-align: center;
+            text-align: left;
             margin-top: 1vw;
+            text-justify: left;
 
         }
 
         .projects p {
             font-size: 2vw;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            text-justify: left;
         }
 
         .projects h1 {
-            font-size: 3vw;
+            font-size: 2.5vw;
             font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        .projects li {
+            font-size: 1.2vw;
         }
 
         .projects:after {
@@ -90,7 +99,7 @@
 
         .directions_text {
             font-family: "Open Sans";
-            font-size: 2vw;
+            font-size: 1.5vw;
             margin: 0px;
             /*margin-left:10vw;*/
         }
@@ -124,16 +133,16 @@
         .hi {
             font-family: 'Calistoga';
             font-size: 6vw;
-            margin-left: 7.5vw;
+            margin-left: 16vw;
             margin-right: 5vw;
             margin-top: 12vw;
         }
 
         .about {
             font-family: 'Open Sans';
-            font-size: 2vw;
+            font-size: 1.8vw;
             margin-top: -5vw;
-            padding-left: 10vw;
+            padding-left: 20vw;
             padding-right: 7vw;
         }
 
@@ -142,7 +151,7 @@
             font-family: 'Open Sans';
             text-align: center;
             margin-top: 1vw;
-            font-size: 1vw;
+            font-size: 3vw;
             box-shadow: 5px 5px 5px grey;
         }
 
@@ -170,7 +179,6 @@
 
             .text {
                 text-align: center;
-                list-style-position: outside;
             }
 
             .hi {
@@ -193,15 +201,20 @@
             }
 
             .left {
-                height: 80vw;
+                height: 65vw;
             }
 
             .right {
-                height: 45vw;
+                height: 65vw;
             }
 
             .projects p {
                 font-size: 4vw;
+                margin-bottom: 0px;
+            }
+
+            .projects img {
+                max-height: 20vw;
             }
 
             .projects h1 {
@@ -209,7 +222,7 @@
             }
 
             .projects li {
-                font-size: 4vw;
+                font-size: 3.5vw;
             }
 
             .left,
@@ -255,31 +268,36 @@
 
         </div>
     </div>
-    <div class="directions_container"><a href="http://puns.us" class="directions_text"> <i
-                class="fas fa-mouse-pointer"></i> Click for puns</a>
-        <p class="directions_text"><i class="fas fa-angle-double-down"></i> Scroll for featured projects</p>
+    <div class="directions_container">
+        <p class="directions_text"><i class="fas fa-angle-double-down"></i> Featured Projects</p>
     </div>
     </div>
 
     <div class="projects">
         <div class="left">
             <a href="https://www.spigotmc.org/resources/acuteloot.81899/"><img src="al.png"
-                    style="max-width:10vw;max-height:10vw;"></a>
+                    style="max-height:10vw;"></a>
             <h1><a href="https://www.spigotmc.org/resources/acuteloot.81899/">AcuteLoot</a></h1></a>
             <p>Free, open-source Minecraft plugin</p>
-            <ul style="font-size:1.2vw;display:inline-block;list-style-position:outside;text-align: left;">
-                <li>15+ custom effects for items and loot</li>
-                <li>Over 6 billion randomly generated names</li>
+            <ul style="display:inline-block;list-style-position:outside;text-align: left;">
+                <li>15+ custom effects for items/loot</li>
+                <li>Over 6 billion randomly generated names for items/loot</li>
                 <li>6k+ downloads</li>
                 <li>Used in 30+ countries</li>
             </ul>
         </div>
 
         <div class="right">
-            <a href="https://forgetalgebra.com"><img src="fa.png" style="max-width:10vw;max-height:10vw;"></a>
+            <a href="https://forgetalgebra.com"><img src="fa.png" style="max-height:10vw;"></a>
             <h1><a href="https://forgetalgebra.com">Forget Algebra</a></h1>
-            <p>Writings on personal finance, professional development and other helpful topics not covered in school.
+            <p>Writings on personal finance, professional development, and other helpful topics not covered in school.
             </p>
+            <ul style="display:inline-block;list-style-position:outside;text-align: left;">
+                <li>Investing</li>
+                <li>Networking</li>
+                <li>Resumes</li>
+                <li>Credit cards</li>
+            </ul>
         </div>
     </div>
 
@@ -289,6 +307,8 @@
     </div>
 
     <div class="footer">Handmade with &#x1F494;| © Nate Delgado</div>
+    <!--<a href="http://puns.us" class="directions_text"> <i
+        class="fas fa-mouse-pointer"></i> Click for puns</a>-->
 
 </body>
 
