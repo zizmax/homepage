@@ -70,5 +70,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     animation: 200,
     ghostClass: 'ghost',
     });
+    $('#slides2').sortable({
+            group: 'list',
+    animation: 200,
+    ghostClass: 'ghost',
+    });
+    window.mySwipe = $('#slider').Swipe().data('Swipe');
+    console.log(window.mySwipe.getNumSlides());
 });
 

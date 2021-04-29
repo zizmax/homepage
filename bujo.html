@@ -8,6 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
         <script src="slide.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/swipejs/2.3.1/swipe.min.js"></script>
     </head>
     <body>
         <h3 style="text-align:center">かわいいね〜〜</h3>
@@ -29,9 +30,13 @@
     }
 </style>
 
+    <div></div>
+    <div></div>
+    <div></div>
+
+<div id="slider" class="swipe">
+  <div class="swipe-wrap">
         <div id="slides">
-
-
             <div class="slide">
                 <div contenteditable="true" class="title p">
                     Wow much title
@@ -66,11 +71,29 @@
                     </textarea>
                 </div>
             </div>
-
             <!--
         </ul>
             -->
+  </div>
+        <div id="slides2">
+            <div class="slide">
+                <div contenteditable="true" class="title p">
+                    Page dos
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                <div contenteditable="true" class="notes p">
+                    Wow more text.
+                </div>
+                </div>
+            </div>
         </div>
+        </div>
+</div>
+
+<button onClick="window.mySwipe.next()">Next</button>
+<button onClick="window.mySwipe.prev()">Prev</button>
 
     </body>
 </html>
