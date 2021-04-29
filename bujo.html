@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+        <script src="slide.js"></script>
+    </head>
+    <body>
+        <h3 style="text-align:center">かわいいね〜〜</h3>
+        <hr>
+        <!--
+        <ul class="slides">
+        -->
+
+        <style>
+    .ghost {
+        opacity: 0.0;
+    }
+    .list-group {
+        margin: 20px;
+    }
+    button {
+        margin: 40px 20px;
+        float: right;
+    }
+</style>
+
+        <div id="slides">
+
+
+            <div class="slide">
+                <div contenteditable="true" class="title p">
+                    Wow much title
+                </div>
+            </div>
+
+            <div class="slide">
+                <div contenteditable="true" class="notes p">
+                    Hello, world. This is a text block. It has a lot of text. Wow!
+                    Look you can type in it!
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="washi p">
+                    <div class="quote p" id="quoteblock">
+                        Click for quote!
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="list p" id="mdout">
+                    <textarea id="md" onblur="run()"># Markdown!
+
+* my
+
+* cool
+
+* list
+
+                    </textarea>
+                </div>
+            </div>
+
+            <!--
+        </ul>
+            -->
+        </div>
+
+    </body>
+</html>

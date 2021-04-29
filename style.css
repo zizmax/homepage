@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Kite+One);
+
+h3 {
+    color: #2F2F2F;
+    font-family: 'Kite One', sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+.slide {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
+    text-align: center;
+}
+.slide {
+}
+
+.p {
+    padding: 15px;
+    
+   /* background-color: #2F2F2F;
+    */
+    margin: 0 0 15px;
+    text-align: center;
+    color: #2F2F2F;
+    border: 2px solid #444;
+    text-align: center;
+}
+
+.slide-placeholder {
+	background: #DADADA;
+	position: relative;
+}
+.slide-placeholder:after {
+	content: " ";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 15px;
+	background-color: #FFF;
+}
+
+.title {
+    font-size: 2em;
+    border: none;
+}
+
+.notes {
+    font-family: 'Kite One', sans-serif;
+}
+
+.quote {
+    quotes: '\201c' '\201d';
+    font-style: italic;
+    background-color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+.quote:before {
+    content: open-quote;
+}
+
+.quote:after {
+    content: close-quote;
+}
+
+.washi {
+    border: none;
+    background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px
+);
+}
+
+.list {
+    font-family: 'Kite One', sans-serif;
+    display: flex;
+    padding: 0;
+    text-align: left;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}
+
+.slide2 {
+    height: 30px;
+}
+.slide3 {
+    height: 50px;
+}
+.slide4 {
+    height: 90px;
+}
+.slide5 {
+    height: 35px;
+}
